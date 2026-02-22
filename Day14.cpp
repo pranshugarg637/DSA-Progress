@@ -1,4 +1,7 @@
 //Day 14->Gas station
+//Check if Array Is Sorted and Rotated
+
+
 //problem link->https://leetcode.com/problems/gas-station/description/
 //topic-> queues (but solved on leetcode without queues using greedy)
 //level-> medium
@@ -62,5 +65,29 @@
 //             }
 //         }
 //         return start;
+//     }
+// };
+
+
+
+
+
+//problem link->https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/
+//level->easy
+//topic->vectors
+
+// //isme humne yeh dekha ki agar bade number ke baad chotta aaya hai toh iska matlab drop aaya hai and count increase krdo. agar count <=1 toh true hai matlab ki rotated hai.
+// //(i+1)%n kiya kyuki jaise 1%5=1 and 3%5=3 toh har number aana chahiye agar 6%5=1 toh restart (kyuki circular drop bhi count hoga)
+// class Solution {
+// public:
+//     bool check(vector<int>& nums) {
+//         int n=nums.size();
+//         int count=0;
+//         for(int i=0;i<n;i++){
+//             if(nums[i]>nums[(i+1)%n]){
+//                 count++;
+//             }
+//         }
+//         return count<=1;
 //     }
 // };
